@@ -142,9 +142,9 @@ class Agent:
         #i think q_eval is for finding the best predicted action for the new_state_batch but idk why we want it
         max_actions = T.argmax(q_eval, dim = 1)
         q_next[terminal_batch] = 0.0
-
+        # estimated future reward is the self.gamma*q_next[batch_index, max_actions] part, where gamma discounts future rewards
         q_target = reward_batch + self.gamma*q_next[batch_index, max_actions]#bellman equation
-        loss = self.Q_local.loss(q_target, q_pred).to(self.Q_local.device)
+        loss = self.Q_local.loss(q_target, q_pred).to(self.Q_local.device)#basically put, how good could our action have been(q-target), vs how good it actually was (q-pred)
         loss.backward()
 
         self.Q_local.optimizer.step()
