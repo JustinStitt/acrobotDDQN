@@ -18,6 +18,8 @@ Before I get into that, let's look at the results.
 
 ![](visuals/trainedGIF.gif)
 
+The trained agent may look sporadic but it is just achieving its objective as fast as possible.
+
 **Acrobot's Objective**
 
 The objective of Acrobot is to cross the black threshold line near the top of the window. Acrobot can control two joints and 
