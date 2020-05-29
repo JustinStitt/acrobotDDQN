@@ -22,8 +22,8 @@ The trained agent may look sporadic but it is just achieving its objective as fa
 
 **Acrobot's Objective**
 
-The objective of Acrobot is to cross the black threshold line near the top of the window. Acrobot can control two joints and 
-add torque to the left or to the right. Crossing the threshold faster is better, this is why you will see the trained agent move
+The objective of Acrobot is to cross the black threshold line near the top of the window. Acrobot can control two joints by 
+adding torque to the left or to the right. Crossing the threshold faster is better, this is why you will see the trained agent move
 extremely quickly side-to-side to generate momentum.
 
 # DQN vs DDQN
