@@ -1,5 +1,5 @@
 # acrobotDDQN
-My first Double DQN model. Used to learn a basic control task -- Acrobot -- OpenAI Gym
+My first Double DQN model. Used to learn a basic control task -- Acrobot -- [OpenAI Gym](https://gym.openai.com/envs/Acrobot-v1/)
 
 see my DQN for [Cartpole](https://github.com/JustinStitt/cartpoleDQN) and [Lunar-Lander](https://github.com/JustinStitt/lunarLanderDQN)
 for a much more detailed writeup on DQN's.
